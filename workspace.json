@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "unblockd-site": "apps/unblockd-site",
+    "unblockd-site-e2e": "apps/unblockd-site-e2e"
+  }
+}
