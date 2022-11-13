@@ -1,20 +1,24 @@
 import Layout from 'components/layout/layout';
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import './styles.css';
+import { ThemeProvider } from 'next-themes';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+import type { ReactElement, ReactNode } from 'react';
+import type { NextPage } from 'next';
+
+type NextPageWithLayout = NextPage & {
+    getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+    Component: NextPageWithLayout;
+};
+function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
+  const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
   return (
-    <>
-      <Head>
-        <title>Welcome to unblockd-site!</title>
-      </Head>
-      <main className="app">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </main>
-    </>
+    <ThemeProvider attribute="class" enableSystem={true}>
+      {getLayout(<Component {...pageProps} />)}
+    </ThemeProvider>
   );
 }
 
