@@ -1,3 +1,4 @@
+import PostCard, { PostCardProps } from 'components/post-card/post-card';
 import { getPosts } from 'utils/markdown-resolver';
 
 /* eslint-disable-next-line */
@@ -17,7 +18,7 @@ export const getStaticProps = () => {
 export function Blog(props: BlogProps) {
   const posts =
     props.posts.length > 0 ? (
-      props.posts.map((post) => <p key={post.slug}>{post.content}</p>)
+      props.posts.map((post) => <PostCard key={post.slug} post={post}></PostCard>)
     ) : (
       <h1 className="text-lg">
         No posts found
@@ -25,7 +26,6 @@ export function Blog(props: BlogProps) {
     );
   return (
     <div>
-      <h1>Welcome to Blog!</h1>
       {posts}
     </div>
   );
