@@ -24,7 +24,7 @@ export function PostCard(props: PostCardProps) {
     <>
       <Link href={linkPath}>
         <a>
-          <div className="my-2 w-11/12 md:w-[600px] overflow-hidden border rounded-lg border-gray-500 py-6 px-6 hover:shadow-sm hover:bg-blue-100 dark:hover:bg-gray-900 hover:cursor-pointer hover:border-blue-600 mx-auto">
+          <div className="bg-white dark:bg-gray-800 my-2 w-11/12 md:w-[600px] overflow-hidden border rounded-lg border-gray-500 py-6 px-6 hover:shadow-sm hover:bg-blue-100 dark:hover:bg-gray-900 hover:cursor-pointer hover:border-blue-600 mx-auto">
             <div className="md:flex justify-between">
               <div className="md:w-7/12 text-center">
                 <h1 className="text-2xl font-bold">{title}</h1>
