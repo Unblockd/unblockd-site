@@ -7,11 +7,11 @@ import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
 
 type NextPageWithLayout = NextPage & {
-    getLayout?: (page: ReactElement) => ReactNode;
+  getLayout?: (page: ReactElement) => ReactNode;
 };
 
 type AppPropsWithLayout = AppProps & {
-    Component: NextPageWithLayout;
+  Component: NextPageWithLayout;
 };
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);

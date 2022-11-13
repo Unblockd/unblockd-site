@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { ComputerDesktopIcon, SunIcon, MoonIcon } from '@heroicons/react/20/solid';
+import {
+  ComputerDesktopIcon,
+  SunIcon,
+  MoonIcon,
+} from '@heroicons/react/20/solid';
 
 const ThemeToggler = () => {
   const [mounted, setMounted] = useState(false);

@@ -12,13 +12,11 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-extend: {
+    extend: {
       lineClamp: {
         7: '7',
-      }
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/line-clamp')
-  ],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

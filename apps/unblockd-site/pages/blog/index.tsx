@@ -18,17 +18,13 @@ export const getStaticProps = () => {
 export function Blog(props: BlogProps) {
   const posts =
     props.posts.length > 0 ? (
-      props.posts.map((post) => <PostCard key={post.slug} post={post}></PostCard>)
+      props.posts.map((post) => (
+        <PostCard key={post.slug} post={post}></PostCard>
+      ))
     ) : (
-      <h1 className="text-lg">
-        No posts found
-      </h1>
+      <h1 className="text-lg">No posts found</h1>
     );
-  return (
-    <div>
-      {posts}
-    </div>
-  );
+  return <div>{posts}</div>;
 }
 
 export default Blog;

@@ -11,7 +11,6 @@ export const getPosts = () => {
   );
 };
 
-
 const postsDirectory = path.join(process.cwd(), 'apps/unblockd-site/posts');
 
 export const getPostsFiles = () => {
@@ -23,14 +22,12 @@ export const sortPostsByDate = (posts: any) => {
   return posts;
 };
 
-
 export interface PostData {
-    slug: string,
-    data: string,
-    content: string,
-    sort(items: any): number
+  slug: string;
+  data: string;
+  content: string;
+  sort(items: any): number;
 }
-
 
 // type componentShape = typeof data & State;
 
@@ -47,4 +44,3 @@ export function getPostData(postFilepath: string) {
 
   return postData;
 }
-
