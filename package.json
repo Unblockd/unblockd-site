@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.20.2",
+    "@babel/runtime": "^7.20.1",
     "@nrwl/next": "14.7.17",
     "core-js": "^3.6.5",
     "meshgrad": "^0.0.8",

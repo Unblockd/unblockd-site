@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.20.2
+  '@babel/runtime': ^7.20.1
   '@nrwl/cli': 14.7.17
   '@nrwl/cypress': 14.7.17
   '@nrwl/eslint-plugin-nx': 14.7.17
@@ -52,6 +53,7 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.20.2
+  '@babel/runtime': 7.20.1
   '@nrwl/next': 14.7.17_ulsfm42t3eyxq4cp4h4nhoupm4
   core-js: 3.26.0
   meshgrad: 0.0.8
