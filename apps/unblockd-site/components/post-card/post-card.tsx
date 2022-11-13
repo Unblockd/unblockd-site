@@ -1,3 +1,4 @@
+import readingTime from 'reading-time'
 import Image from 'next/image';
 import Link from 'next/link';
 /* eslint-disable-next-line */
@@ -7,7 +8,7 @@ export interface PostCardProps {
 }
 
 export function PostCard(props: PostCardProps) {
-  const { title, image, excerpt, date, slug, readTime, topic, content } =
+  const { title, image, excerpt, date, slug, topic, content } =
     props.post;
 
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
@@ -51,7 +52,7 @@ export function PostCard(props: PostCardProps) {
                 <h3 className="text-base px-2  border bg-blue-100 border-blue-300 inline rounded-lg text-gray-900">
                   {topic}
                 </h3>
-                <h2 className="text-lg">{readTime} read</h2>
+                <h2 className="text-lg">{readingTime(content).text}</h2>
               </div>
             </div>
           </div>
