@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import readingTime from 'reading-time'
 
 //@returns: Sorted array of post objects by date
 export const getPosts = () => {
@@ -26,6 +27,7 @@ export interface PostData {
   slug: string;
   data: string;
   content: string;
+  readingTime: string;
   sort(items: any): number;
 }
 
@@ -39,6 +41,7 @@ export function getPostData(postFilepath: string) {
   const postData = {
     slug: postFilepath.replace(/\.md$/, ''),
     ...data,
+    readingTime: readingTime(content).text,
     content,
   } as PostData;
 
