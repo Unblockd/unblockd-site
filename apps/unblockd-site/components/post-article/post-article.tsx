@@ -57,10 +57,10 @@ export function PostArticle(props: PostArticleProps) {
 
   return (
     <>
-      <div className="w-full px-12 py-4">
+      <div className="w-full px-12">
         <div className="flex my-4">
           <span className="hover:font-semibold">
-            <Link href="/blog">Go Back</Link>
+            <Link href="/blog">← Go Back</Link>
           </span>
         </div>
         <div className="md:w-3/5 my-6 mx-auto">
