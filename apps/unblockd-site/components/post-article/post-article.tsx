@@ -45,13 +45,26 @@ export function PostArticle(props: PostArticleProps) {
         const image = node.children[0];
 
         return (
-          <div>
-            <Image src={imagePath} alt={image.alt} width={600} height={300} />
+          <div className="flex flex-col items-center py-2">
+            <Image
+              src={image.properties.src}
+              alt={image.properties.alt}
+              width={300}
+              height={300}
+              className="rounded-2xl border-2 shadow-md"
+            />
+            <br></br> <br></br>
           </div>
         );
       }
 
-      return (<><p>{paragraph.children}</p><br></br><br></br></> )
+      return (
+        <>
+          <p>{paragraph.children}</p>
+          <br></br>
+          <br></br>
+        </>
+      );
     },
   };
 
