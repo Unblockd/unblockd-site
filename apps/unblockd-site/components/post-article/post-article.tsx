@@ -1,7 +1,10 @@
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import gruvboxDark from 'react-syntax-highlighter/dist/cjs/styles/prism/gruvbox-dark';
 
 /* eslint-disable-next-line */
 export interface PostArticleProps {
@@ -9,6 +12,17 @@ export interface PostArticleProps {
 }
 
 export function PostArticle(props: PostArticleProps) {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   const {
     title,
     image,
@@ -71,18 +85,34 @@ export function PostArticle(props: PostArticleProps) {
     code(code) {
       const { className, children } = code;
       const language = className.split('-')[1];
-      return (
-        <div className="flex flex-col items-center py-2">
-          <SyntaxHighlighter
-            language={language}
-            className="rounded-2xl border-2 shadow-md"
-          >
-            {children}
-          </SyntaxHighlighter>
-          <br></br>
-          <br></br>
-        </div>
-      );
+      if (theme === 'dark') {
+        return (
+          <div className="w-full py-2">
+            <SyntaxHighlighter
+              language={language}
+              style={gruvboxDark}
+              className="rounded-2xl border-2 shadow-md"
+            >
+              {children}
+            </SyntaxHighlighter>
+            <br></br>
+            <br></br>
+          </div>
+        );
+      } else {
+        return (
+          <div className="w-full py-2">
+            <SyntaxHighlighter
+              language={language}
+              className="rounded-2xl border-2 shadow-md"
+            >
+              {children}
+            </SyntaxHighlighter>
+            <br></br>
+            <br></br>
+          </div>
+        );
+      }
     },
   };
 
