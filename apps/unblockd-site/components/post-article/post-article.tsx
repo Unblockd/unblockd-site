@@ -51,7 +51,7 @@ export function PostArticle(props: PostArticleProps) {
         );
       }
 
-      return <p>{paragraph.children}</p>;
+      return (<><p>{paragraph.children}</p><br></br><br></br></> )
     },
   };
 
