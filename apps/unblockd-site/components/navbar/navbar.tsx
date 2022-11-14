@@ -26,7 +26,7 @@ export const Navbar = () => {
           {navLinks.map((link, index) => {
             return (
               <Link href={link.path} key={index}>
-                <a className="hover:brightness-90">
+                <a className="hover:brightness-90 hover:scale-125">
                   {link.name}
                 </a>
               </Link>

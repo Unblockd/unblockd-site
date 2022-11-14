@@ -13,7 +13,6 @@ const Home: NextPage = () => {
   return (
     <>
       <div
-        style={generateJSXMeshGradient(ELEMENTS)}
         className="flex items-center justify-center h-screen w-screen"
       >
         <div className="text-my-light-text dark:text-my-dark-text bg-my-light-component dark:bg-my-dark-component border-my-light-border dark:border-my-dark-border  block p-6 space-y-4 max-w-sm rounded-lg border shadow-md ">
@@ -28,7 +27,7 @@ const Home: NextPage = () => {
           </p>
           <a
             href="https://github.com/Unblockd"
-            className="hover:brightness-70 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
+            className="hover:brightness-90 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
           >
             <svg
               className="fill-my-light-icon dark:fill-my-dark-icon mr-3 w-5 h-5"

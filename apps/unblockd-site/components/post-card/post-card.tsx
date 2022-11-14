@@ -48,7 +48,7 @@ export function PostCard(props: PostCardProps) {
             <div className="flex justify-between pt-4 text-my-light-subtext dark:text-my-dark-subtext">
               <p className="text-lg">{formattedDate}</p>
               <div className="inline-flex space-x-2">
-                <h3 className="text-base px-2 border inline rounded-lg">
+                <h3 className="border-my-light-border dark:border-my-dark-border text-base px-2 border inline rounded-lg">
                   {topic}
                 </h3>
                 <h2 className="loading-text text-lg">{readingTime}</h2>
