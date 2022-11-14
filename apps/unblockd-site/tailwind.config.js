@@ -26,7 +26,7 @@ module.exports = {
         'my-light-subtext': '#6c757d',
         'my-dark-subtext': '#ced4da',
         'my-light-border': '#212529',
-        'my-dark-border': '#ced4da',
+        'my-dark-border': '#767b91',
         'my-light-component': '#f1f0ea',
         'my-dark-component': '#14213d',
         'my-yellow': '#f5cb5c',
