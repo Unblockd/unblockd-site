@@ -51,7 +51,7 @@ export function PostCard(props: PostCardProps) {
                 <h3 className="text-base px-2 border inline rounded-lg">
                   {topic}
                 </h3>
-                <h2 className="text-lg">{readingTime}</h2>
+                <h2 className="loading-text text-lg">{readingTime}</h2>
               </div>
             </div>
           </div>

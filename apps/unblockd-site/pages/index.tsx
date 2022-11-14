@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           </p>
           <a
             href="https://github.com/Unblockd"
-            className="hover:brightness-90 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
+            className="hover:brightness-70 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
           >
             <svg
               className="fill-my-light-icon dark:fill-my-dark-icon mr-3 w-5 h-5"
