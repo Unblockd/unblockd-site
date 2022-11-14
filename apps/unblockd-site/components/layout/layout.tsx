@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
 export interface LayoutProps {}
 function Layout(props) {
   // Number of color stops
-  const ELEMENTS = 5;
+  const ELEMENTS = 7;
     const [isServer, setIsServer] = useState(true)
   const [history, setHistory] = useState([generateJSXMeshGradient(ELEMENTS)])
   const [index, setIndex] = useState(0)
@@ -24,12 +24,15 @@ function Layout(props) {
   }, [])
   return (
     <div
-      className="flex flex-col justify-between h-screen"
+      className=""
       style={isServer ? {} : history[index]}
     >
+
+      <div className="bg-white/80 dark:bg-slate-900/80 flex flex-col justify-between h-screen">
       <Header />
       {props.children}
       <Footer />
+    </div>
     </div>
   );
 }
