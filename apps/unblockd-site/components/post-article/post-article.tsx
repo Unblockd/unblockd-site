@@ -69,15 +69,21 @@ export function PostArticle(props: PostArticleProps) {
     },
 
     code(code) {
-            const { className, children } = code;
-            const language = className.split('-')[1];
-            return (
-                <SyntaxHighlighter
-                    language={language}>
-                    {children}
-                </SyntaxHighlighter>
-            );
-        },
+      const { className, children } = code;
+      const language = className.split('-')[1];
+      return (
+        <div className="flex flex-col items-center py-2">
+          <SyntaxHighlighter
+            language={language}
+            className="rounded-2xl border-2 shadow-md"
+          >
+            {children}
+          </SyntaxHighlighter>
+          <br></br>
+          <br></br>
+        </div>
+      );
+    },
   };
 
   return (
