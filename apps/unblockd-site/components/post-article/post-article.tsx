@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 /* eslint-disable-next-line */
 export interface PostArticleProps {
@@ -66,6 +67,17 @@ export function PostArticle(props: PostArticleProps) {
         </>
       );
     },
+
+    code(code) {
+            const { className, children } = code;
+            const language = className.split('-')[1];
+            return (
+                <SyntaxHighlighter
+                    language={language}>
+                    {children}
+                </SyntaxHighlighter>
+            );
+        },
   };
 
   return (
