@@ -35,7 +35,7 @@ export function PostArticle(props: PostArticleProps) {
     }
   );
 
-  const imagePath = `/images/posts/${slug}/${image}`;
+  const imagePath = `/images/blog/${slug}/${image}`;
 
   const customRenderers = {
     p(paragraph) {
