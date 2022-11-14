@@ -23,11 +23,11 @@ const ThemeToggler = () => {
 
   const getThemeIcon = () => {
     if (theme === 'dark') {
-      return <MoonIcon className="h-6 w-6 dark:text-white" />;
+      return <MoonIcon className="h-6 w-6 dark:my-dark-text" />;
     } else if (theme === 'light') {
-      return <SunIcon className="h-6 w-6 dark:text-white" />;
+      return <SunIcon className="h-6 w-6 dark:my-dark-text" />;
     } else if (theme === 'system') {
-      return <ComputerDesktopIcon className="h-6 w-6 dark:text-white" />;
+      return <ComputerDesktopIcon className="h-6 w-6 dark:my-dark-text" />;
     }
   };
 
@@ -37,7 +37,7 @@ const ThemeToggler = () => {
       <select
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
-        className="dark:text-white rounded dark:bg-gray-900 bg-gray-50"
+        className="my-light-text dark:my-dark-text dark:bg-my-dark-component bg-my-light-component rounded"
       >
         <option value="system">System</option>
         <option value="dark">Dark</option>

@@ -21,12 +21,12 @@ export const Navbar = () => {
 
   return (
     <section>
-      <nav className="dark:bg-gray-900 bg-gray-50 z-0 border-b border-gray-500">
+      <nav className="text-my-light-text dark:text-my-dark-text bg-my-light-component dark:bg-my-dark-component border-my-light-border dark:border-my-dark-border z-0 border-b">
         <div className="flex justify-evenly py-8 text-xl">
           {navLinks.map((link, index) => {
             return (
               <Link href={link.path} key={index}>
-                <a className="hover:text-blue-800 dark:hover:text-blue-600">
+                <a className="hover:brightness-90">
                   {link.name}
                 </a>
               </Link>

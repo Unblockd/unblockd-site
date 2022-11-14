@@ -12,30 +12,26 @@ const Home: NextPage = () => {
   const ELEMENTS = 5;
   return (
     <>
-      <Head>
-        <title>unblock.d - coming soon</title>
-        <meta name="description" content="unblock.d - coming soon" />
-      </Head>
       <div
         style={generateJSXMeshGradient(ELEMENTS)}
         className="flex items-center justify-center h-screen w-screen"
       >
-        <div className="block p-6 space-y-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-          <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 dark:text-white">
+        <div className="text-my-light-text dark:text-my-dark-text bg-my-light-component dark:bg-my-dark-component border-my-light-border dark:border-my-dark-border  block p-6 space-y-4 max-w-sm rounded-lg border shadow-md ">
+          <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none">
             Web3{' '}
-            <mark className="px-2 text-black bg-yellow-200 rounded dark:bg-yellow-500">
+            <mark className="text-my-light-text bg-my-yellow dark:brightness-90 rounded px-2">
               unblock.d
             </mark>
           </h1>
-          <p className="text-lg font-normal text-black lg:text-xl dark:text-white">
+          <p className="text-lg font-normal lg:text-xl px-6">
             We build cool s**t that ends up in the hands of real people 🚀
           </p>
           <a
             href="https://github.com/Unblockd"
-            className="w-full inline-flex justify-center items-center p-5 font-medium rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:bg-gray-700 dark:text-white"
+            className="hover:brightness-90 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
           >
             <svg
-              className="mr-3 w-5 h-5 dark:fill-white"
+              className="fill-my-light-icon dark:fill-my-dark-icon mr-3 w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

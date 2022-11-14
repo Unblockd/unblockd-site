@@ -8,9 +8,9 @@ export function Header(props: HeaderProps) {
   return (
     <div>
       <Head>
-        <title>Welcome to unblockd-site!</title>
+        <title>Unblockd</title>
+        <meta name="description" content="Web3 Unblockd" />
       </Head>
-
       <Navbar></Navbar>
     </div>
   );
