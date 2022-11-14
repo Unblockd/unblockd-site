@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   return (
     <section>
-      <nav className="dark:bg-gray-900 bg-gray-50 z-0 ">
+      <nav className="dark:bg-gray-900 bg-gray-50 z-0 border-b border-gray-500">
         <div className="flex justify-evenly py-8 text-xl">
           {navLinks.map((link, index) => {
             return (
