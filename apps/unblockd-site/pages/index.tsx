@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none">
             Web3{' '}
             <mark className="text-my-light-text bg-my-yellow dark:brightness-90 rounded px-2">
-              unblock.d
+              unblock..d
             </mark>
           </h1>
           <p className="text-lg font-normal lg:text-xl px-6">
