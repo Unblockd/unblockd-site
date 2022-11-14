@@ -29,6 +29,8 @@ module.exports = {
         'my-dark-border': '#767b91',
         'my-light-component': '#f1f0ea',
         'my-dark-component': '#14213d',
+        'my-light-component-alt': '#e0ddcf',
+        'my-dark-component-alt': '#3b465d',
         'my-yellow': '#f5cb5c',
       },
     },

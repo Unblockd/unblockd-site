@@ -1,8 +1,9 @@
+import PostArticle from 'components/post-article/post-article';
 import PostCard from 'components/post-card/post-card';
 import { getPostData, getPostsFiles } from 'utils/markdown-resolver';
 
 function SinglePost({ data }) {
-  return <PostCard key={data.slug} post={data}></PostCard>;
+  return <PostArticle postData={data}/>
 }
 
 export const getStaticProps = (context) => {

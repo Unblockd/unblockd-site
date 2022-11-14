@@ -28,7 +28,7 @@ function Layout(props) {
       style={isServer ? {} : history[index]}
     >
 
-      <div className="bg-white/80 dark:bg-slate-900/80 flex flex-col justify-between h-screen">
+      <div className="bg-white/80 dark:bg-slate-900/80 flex flex-col justify-between min-h-screen">
       <Header />
       {props.children}
       <Footer />

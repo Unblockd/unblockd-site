@@ -24,7 +24,7 @@ export function Blog(props: BlogProps) {
     ) : (
       <h1 className="text-lg">No posts found</h1>
     );
-  return <div className="grid items-center h-screen w-screen">{posts}</div>;
+  return <div className="grid items-center">{posts}</div>;
 }
 
 export default Blog;

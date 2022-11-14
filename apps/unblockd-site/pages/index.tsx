@@ -1,19 +1,11 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-// import Code from '../components/code'
-// <link rel="icon" href="/favicon.ico" />
-import { generateJSXMeshGradient } from 'meshgrad';
 
 const Home: NextPage = () => {
-  // Number of color stops
-  const ELEMENTS = 5;
   return (
     <>
       <div
-        className="flex items-center justify-center h-screen w-screen"
+        className="flex items-center justify-center"
       >
         <div className="text-my-light-text dark:text-my-dark-text bg-my-light-component dark:bg-my-dark-component border-my-light-border dark:border-my-dark-border  block p-6 space-y-4 max-w-sm rounded-lg border shadow-md ">
           <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none">
@@ -27,7 +19,7 @@ const Home: NextPage = () => {
           </p>
           <a
             href="https://github.com/Unblockd"
-            className="hover:brightness-90 w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
+            className="hover:brightness-90 hover:bg-my-light-component-alt hover:dark:bg-my-dark-component-alt w-full inline-flex justify-center items-center p-5 font-medium rounded-lg"
           >
             <svg
               className="fill-my-light-icon dark:fill-my-dark-icon mr-3 w-5 h-5"
