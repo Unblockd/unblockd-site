@@ -78,6 +78,7 @@ export function PostArticle(props: PostArticleProps) {
 
       return (
         <>
+
           <p className="text-lg">{paragraph.children}</p>
           <br></br>
           <br></br>
