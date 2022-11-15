@@ -13,7 +13,7 @@ export interface PostArticleProps {
 
 export function PostArticle(props: PostArticleProps) {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -60,22 +60,25 @@ export function PostArticle(props: PostArticleProps) {
         const image = node.children[0];
 
         return (
-          <div className="flex flex-col items-center py-2">
-            <Image
-              src={image.properties.src}
-              alt={image.properties.alt}
-              width={300}
-              height={300}
-              className="rounded-2xl border-2 shadow-md"
-            />
-            <br></br> <br></br>
+          <div>
+            <div className="w-full h-[600px] overflow-hidden relative">
+              <Image
+                src={image.properties.src}
+                alt={image.properties.alt}
+                className="rounded-2xl border-2 shadow-md"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <br></br>
+            <br></br>
           </div>
         );
       }
 
       return (
         <>
-          <p>{paragraph.children}</p>
+          <p className="text-lg">{paragraph.children}</p>
           <br></br>
           <br></br>
         </>
