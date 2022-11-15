@@ -20,6 +20,7 @@ specifiers:
   '@types/node': 16.11.7
   '@types/react': 18.0.20
   '@types/react-dom': 18.0.6
+  '@types/react-syntax-highlighter': ^15.5.5
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
   autoprefixer: 10.4.12
@@ -64,6 +65,7 @@ dependencies:
   '@heroicons/react': 2.0.13_react@18.2.0
   '@nrwl/next': 14.7.17_ulsfm42t3eyxq4cp4h4nhoupm4
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.1.8
+  '@types/react-syntax-highlighter': 15.5.5
   core-js: 3.26.0
   gray-matter: 4.0.3
   meshgrad: 0.0.8
@@ -3016,6 +3018,12 @@ packages:
     dependencies:
       '@types/react': 18.0.20
     dev: true
+
+  /@types/react-syntax-highlighter/15.5.5:
+    resolution: {integrity: sha512-QH3JZQXa2usAvJvSsdSUJ4Yu4j8ReuZpgRrEW+XP+Rmosbn425YshW9iGEb/pAARm8496axHhHUPRH3UmTiB6A==}
+    dependencies:
+      '@types/react': 18.0.20
+    dev: false
 
   /@types/react/18.0.20:
     resolution: {integrity: sha512-MWul1teSPxujEHVwZl4a5HxQ9vVNsjTchVA+xRqv/VYGCuKGAU6UhfrTdF5aBefwD1BHUD8i/zq+O/vyCm/FrA==}

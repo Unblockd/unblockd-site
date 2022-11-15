@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import gruvboxDark from 'react-syntax-highlighter/dist/cjs/styles/prism/gruvbox-dark';
+import materialOceanic from 'react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic';
 
 /* eslint-disable-next-line */
 export interface PostArticleProps {
@@ -90,7 +90,7 @@ export function PostArticle(props: PostArticleProps) {
           <div className="w-full py-2">
             <SyntaxHighlighter
               language={language}
-              style={gruvboxDark}
+              style={materialOceanic}
               className="rounded-2xl border-2 shadow-md"
             >
               {children}

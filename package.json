@@ -15,6 +15,7 @@
     "@heroicons/react": "^2.0.13",
     "@nrwl/next": "14.7.17",
     "@tailwindcss/line-clamp": "^0.4.2",
+    "@types/react-syntax-highlighter": "^15.5.5",
     "core-js": "^3.6.5",
     "gray-matter": "^4.0.3",
     "meshgrad": "^0.0.8",
