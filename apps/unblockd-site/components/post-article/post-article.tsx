@@ -13,7 +13,7 @@ export interface PostArticleProps {
 
 export function PostArticle(props: PostArticleProps) {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -85,7 +85,7 @@ export function PostArticle(props: PostArticleProps) {
     code(code) {
       const { className, children } = code;
       const language = className.split('-')[1];
-      if (theme === 'dark') {
+      if (resolvedTheme === 'dark') {
         return (
           <div className="w-full py-2">
             <SyntaxHighlighter
