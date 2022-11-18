@@ -2,22 +2,21 @@
 @tailwind base;
 @tailwind utilities;
 
- .loading-text {
-	 color: #fff;
-	 background: linear-gradient(to right, #ff8500 10%, #495057 50%, #ff8500 60%);
-	 background-size: auto auto;
-	 background-clip: border-box;
-	 background-size: 200% auto;
-	 color: #fff;
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent;
-	 animation: textclip 4s linear infinite;
-	 display: inline-block;
+.loading-text {
+  color: #fff;
+  background: linear-gradient(to right, #ff8500 10%, #495057 50%, #ff8500 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
 }
- @keyframes textclip {
-	 to {
-		 background-position: 200% center;
-	}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-

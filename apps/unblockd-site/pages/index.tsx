@@ -4,9 +4,7 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   return (
     <>
-      <div
-        className="flex items-center justify-center"
-      >
+      <div className="flex items-center justify-center">
         <div className="text-my-light-text dark:text-my-dark-text bg-my-light-component dark:bg-my-dark-component border-my-light-border dark:border-my-dark-border  block p-6 space-y-4 max-w-sm rounded-lg border shadow-md ">
           <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none">
             Web3{' '}

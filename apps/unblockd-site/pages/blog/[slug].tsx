@@ -3,7 +3,7 @@ import PostCard from 'components/post-card/post-card';
 import { getPostData, getPostsFiles } from 'utils/markdown-resolver';
 
 function SinglePost({ data }) {
-  return <PostArticle postData={data}/>
+  return <PostArticle postData={data} />;
 }
 
 export const getStaticProps = (context) => {
